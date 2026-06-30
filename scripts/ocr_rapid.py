@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 RapidOCR 图片文字识别脚本 (优化版)
-用法: cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_rapid.py <image_path>
+用法: cd ~/.hermes/skills/rapidocr && uv run python scripts/ocr_rapid.py <image_path>
 """
 import sys
 import os

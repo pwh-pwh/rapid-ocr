@@ -1,5 +1,5 @@
 [project]
-name = "paddleocr-skill"
+name = "rapidocr-skill"
 version = "2.3.0"
 description = "RapidOCR 图片文字识别 skill 环境"
 requires-python = ">=3.13"

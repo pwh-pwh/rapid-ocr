@@ -1,11 +1,11 @@
-# paddleocr Skill
+# rapidocr Skill
 
 RapidOCR 图片文字识别技能，支持中英文混合识别。
 
 ## 目录结构
 
 ```
-paddleocr/
+rapidocr/
 ├── SKILL.md              # 技能定义文件（Hermes 自动加载）
 ├── README.md             # 本文档
 ├── pyproject.toml        # uv 依赖声明
@@ -23,7 +23,7 @@ paddleocr/
 ## 环境安装
 
 ```bash
-cd ~/.hermes/skills/paddleocr
+cd ~/.hermes/skills/rapidocr
 uv sync
 ```
 
@@ -34,7 +34,7 @@ uv sync
 ### 直接识别
 
 ```bash
-cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_rapid.py <image_path>
+cd ~/.hermes/skills/rapidocr && uv run python scripts/ocr_rapid.py <image_path>
 ```
 
 首次运行会自动启动常驻服务（加载模型约 6 秒），后续识别约 3 秒。
@@ -42,7 +42,7 @@ cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_rapid.py <image_path>
 ### 手动启动常驻服务
 
 ```bash
-cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_server.py &
+cd ~/.hermes/skills/rapidocr && uv run python scripts/ocr_server.py &
 ```
 
 服务监听 `127.0.0.1:9898`，POST `/ocr` 接收 JSON `{"image_path": "..."}`。

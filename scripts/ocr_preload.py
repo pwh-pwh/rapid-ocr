@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 RapidOCR 模型预加载脚本
-用法: cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_preload.py
+用法: cd ~/.hermes/skills/rapidocr && uv run python scripts/ocr_preload.py
 """
 import os
 import sys

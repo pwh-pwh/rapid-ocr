@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 RapidOCR 常驻服务
-用法: cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_server.py
+用法: cd ~/.hermes/skills/rapidocr && uv run python scripts/ocr_server.py
 端口: 9898
 """
 import os

@@ -114,29 +114,6 @@ wheels = [
 ]
 
 [[package]]
-name = "paddleocr-skill"
-version = "2.3.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "numpy" },
-    { name = "onnxruntime" },
-    { name = "opencv-python" },
-    { name = "pillow" },
-    { name = "pyyaml" },
-    { name = "rapidocr-onnxruntime" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "numpy", specifier = ">=2.5.0" },
-    { name = "onnxruntime", specifier = ">=1.27.0" },
-    { name = "opencv-python", specifier = ">=4.13.0" },
-    { name = "pillow", specifier = ">=12.2.0" },
-    { name = "pyyaml", specifier = ">=6.0.3" },
-    { name = "rapidocr-onnxruntime", specifier = ">=1.4.4" },
-]
-
-[[package]]
 name = "pillow"
 version = "12.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -286,6 +263,29 @@ dependencies = [
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ba/12/1e5497183bdbe782dbb91bad1d0d2297dba4d2831b2652657f7517bfc6df/rapidocr_onnxruntime-1.4.4-py3-none-any.whl", hash = "sha256:971d7d5f223a7a808662229df1ef69893809d8457d834e6373d3854bc1782cbf", size = 14915192 },
+]
+
+[[package]]
+name = "rapidocr-skill"
+version = "2.3.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "numpy" },
+    { name = "onnxruntime" },
+    { name = "opencv-python" },
+    { name = "pillow" },
+    { name = "pyyaml" },
+    { name = "rapidocr-onnxruntime" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "numpy", specifier = ">=2.5.0" },
+    { name = "onnxruntime", specifier = ">=1.27.0" },
+    { name = "opencv-python", specifier = ">=4.13.0" },
+    { name = "pillow", specifier = ">=12.2.0" },
+    { name = "pyyaml", specifier = ">=6.0.3" },
+    { name = "rapidocr-onnxruntime", specifier = ">=1.4.4" },
 ]
 
 [[package]]
