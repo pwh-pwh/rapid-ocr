@@ -28,7 +28,7 @@ cd ~/.hermes/skills/rapidocr && uv sync
 ## 目录结构
 ```
 rapidocr/
-├── SKILL.md              # 技能定义文件（Hermes 自动加载）
+├── SKILL.md              # 技能定义文件（Agent 自动加载）
 ├── pyproject.toml          # uv 环境依赖声明
 ├── .python-version         # 3.13
 ├── uv.lock

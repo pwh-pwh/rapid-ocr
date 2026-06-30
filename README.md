@@ -6,7 +6,7 @@ RapidOCR 图片文字识别技能，支持中英文混合识别。
 
 ```
 rapidocr/
-├── SKILL.md              # 技能定义文件（Hermes 自动加载）
+├── SKILL.md              # 技能定义文件（Agent 自动加载）
 ├── README.md             # 本文档
 ├── pyproject.toml        # uv 依赖声明
 ├── .python-version       # Python 版本 (3.13)
