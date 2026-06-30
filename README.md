@@ -2,6 +2,8 @@
 
 RapidOCR 图片文字识别技能，支持中英文混合识别。
 
+基于 [RapidOCR](https://github.com/RapidAI/RapidOCR)（Apache License 2.0）。本 skill 遵循 Apache License 2.0 协议。
+
 ## 目录结构
 
 ```
