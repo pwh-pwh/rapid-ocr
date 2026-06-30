@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 RapidOCR 图片文字识别脚本 (优化版)
-用法: cd /home/pwh/aiwork/paddleocrdm && uv run python scripts/ocr_rapid.py <image_path>
+用法: cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_rapid.py <image_path>
 """
 import sys
 import os
@@ -10,7 +10,8 @@ import urllib.request
 import subprocess
 import time
 
-os.chdir("/home/pwh/aiwork/paddleocrdm")
+SKILL_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(SKILL_DIR)
 
 OCR_SERVER = "http://127.0.0.1:9898/ocr"
 
@@ -34,6 +35,7 @@ def start_server():
     server_script = os.path.join(script_dir, "ocr_server.py")
     subprocess.Popen(
         ["uv", "run", "python", server_script],
+        cwd=SKILL_DIR,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     )

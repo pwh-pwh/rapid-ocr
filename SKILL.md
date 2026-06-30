@@ -1,7 +1,7 @@
 ---
 name: paddleocr
 description: 使用RapidOCR识别图片中的文字，支持中英文识别。当用户在飞书发送图片并提到"识别图片"、"ocr"、"提取文字"等关键词时使用。
-version: 2.3.0
+version: 3.0.0
 ---
 
 # RapidOCR 图片文字识别
@@ -16,16 +16,19 @@ version: 2.3.0
 - 提取文字
 - 识别文字
 
+## 环境说明
+本 skill 自带独立 uv 环境，所有依赖在 skill 目录内的 pyproject.toml 管理，不依赖外部项目目录。
+
 ## 执行步骤
 
 ### 1. 启动常驻服务（首次使用）
 ```bash
-cd /home/pwh/aiwork/paddleocrdm && uv run python /home/pwh/.hermes/skills/paddleocr/scripts/ocr_server.py &
+cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_server.py &
 ```
 
 ### 2. 执行OCR识别
 ```bash
-cd /home/pwh/aiwork/paddleocrdm && uv run python /home/pwh/.hermes/skills/paddleocr/scripts/ocr_rapid.py <image_path>
+cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_rapid.py <image_path>
 ```
 
 ### 3. 返回结果
@@ -37,6 +40,6 @@ cd /home/pwh/aiwork/paddleocrdm && uv run python /home/pwh/.hermes/skills/paddle
 - 减小最大边长 (`max_side_len=640`)
 
 ## 注意事项
-1. 使用uv环境运行
+1. 使用 skill 目录内的 uv 环境运行
 2. 支持中英文混合识别
 3. 图片路径可以是本地路径或URL

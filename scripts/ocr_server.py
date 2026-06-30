@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 RapidOCR 常驻服务
-用法: cd /home/pwh/aiwork/paddleocrdm && uv run python scripts/ocr_server.py
+用法: cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_server.py
 端口: 9898
 """
 import os
@@ -9,7 +9,8 @@ import sys
 import json
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-os.chdir("/home/pwh/aiwork/paddleocrdm")
+SKILL_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(SKILL_DIR)
 
 print("正在加载 OCR 模型...")
 from rapidocr_onnxruntime import RapidOCR

@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
 RapidOCR 模型预加载脚本
-用法: cd /home/pwh/aiwork/paddleocrdm && uv run python scripts/ocr_preload.py
+用法: cd ~/.hermes/skills/paddleocr && uv run python scripts/ocr_preload.py
 """
 import os
 import sys
 
-os.chdir("/home/pwh/aiwork/paddleocrdm")
+SKILL_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(SKILL_DIR)
 
 print("正在预加载 OCR 模型...")
 from rapidocr_onnxruntime import RapidOCR
