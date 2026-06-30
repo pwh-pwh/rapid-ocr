@@ -22,9 +22,21 @@ rapidocr/
     └── rapidocr-api.md   # RapidOCR API 参考
 ```
 
-## 环境安装
+## 通过 skills.sh 安装（推荐）
+
+使用 [skills.sh](https://skills.sh) CLI 一键安装到你的 AI Agent：
 
 ```bash
+npx skills add pwh-pwh/rapid-ocr --yes
+```
+
+安装后自动配置到 Claude Code、Cursor、Codex、GitHub Copilot、OpenCode 等主流 Agent。
+skills.sh 页面：https://skills.sh/pwh-pwh/rapid-ocr/rapidocr
+
+## 手动安装
+
+```bash
+git clone git@github.com:pwh-pwh/rapid-ocr.git ~/.hermes/skills/rapidocr
 cd ~/.hermes/skills/rapidocr
 uv sync
 ```
